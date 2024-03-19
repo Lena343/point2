@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./broy.css" />
+    <link type="text/css" rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<span class="form-label">Имя</span>
+									<input class="form-control" type="text" placeholder="Введите ваше имя">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<span class="form-label">Телефон</span>
+									<input class="form-control" type="text" placeholder="Введите ваш номер телефона">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<span class="form-label">Дата</span>
+									<input class="form-control" type="date" required>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<span class="form-label">Время аренды</span>
+									<select class="form-control">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+                                        <option>Другое время</option>
+									</select>
+									<span class="select-arrow"></span>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<span class="form-label">Количество моделей</span>
+									<select class="form-control">
+										<option>1 модель</option>
+										<option>2 модели</option>
+                                        <option>3 модели</option>
+                                        <option>Другое количество</option>
+									</select>
+									<span class="select-arrow"></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<span class="form-label">Зал</span>
+									<select class="form-control">
+										<option>Label</option>
+                                        <option>Fury</option>
+                                        <option>Dalaran</option>
+                                        <option>Imperio</option>
+                                        <option>Sities</option>
+                                        <option>Hanashi</option>
+									</select>
+									<span class="select-arrow"></span>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-btn">
+									<button class="primary" onclick="window.dialog.showModal();">Отправить заявку</button>
+									<dialog id="dialog">
+										<h2>Ваша заявка отправлена. </h2>
+										<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+									</dialog>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
